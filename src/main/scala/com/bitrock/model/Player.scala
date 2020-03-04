@@ -8,4 +8,4 @@ import com.bitrock.model.GameBoard.Square
  * @param name     the player's name
  * @param position the player's current position
  */
-case class Player(name: String, position: Square)
+final case class Player(name: String, position: Square)

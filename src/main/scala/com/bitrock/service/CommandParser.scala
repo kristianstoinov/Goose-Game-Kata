@@ -8,7 +8,7 @@ import scala.util.parsing.combinator.JavaTokenParsers
 /**
  * Parser for user input and their translation to commands
  */
-case class CommandParser(rollDice: () => DiceRoll) extends JavaTokenParsers {
+final case class CommandParser(rollDice: () => DiceRoll) extends JavaTokenParsers {
 
   /**
    * Parses the user input and translates it to a Command
